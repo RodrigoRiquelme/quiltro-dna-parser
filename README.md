@@ -1,6 +1,6 @@
-# image2ppm
+# ppm_maker
 
-This library converts a gif image to PPM format for use in the doggy-id-parser
+This library converts a gif image to PPM format
 
 ## Example
 
