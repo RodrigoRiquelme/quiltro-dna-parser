@@ -40,6 +40,14 @@ class PPMMaker:
             ppm_string = ppm_string + pixel_line + '.'
         return ppm_string[:-1]
 
+    def write_ppm(self, filename):
+        ppm = self.output_ppm()
+        print ppm
+        f = open(filename, "w")
+        f.write(ppm)
+        f.close()
+
+
     def image_from_ppm(self, ppm, filename):
         width = 0
         height = 0
