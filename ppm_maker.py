@@ -42,11 +42,9 @@ class PPMMaker:
 
     def write_ppm(self, filename):
         ppm = self.output_ppm()
-        print ppm
         f = open(filename, "w")
         f.write(ppm)
         f.close()
-
 
     def image_from_ppm(self, ppm, filename):
         width = 0
