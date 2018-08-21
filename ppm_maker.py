@@ -3,11 +3,8 @@ from PIL import Image
 
 class PPMMaker:
 
-    def __init__(self, image):
+    def __init__(self, image=None):
         self.rotation = 90
-        self.im = Image.open(image).rotate(self.rotation)
-        self.pixels = list(self.im.getdata())
-        self.width, self.height = self.im.size
         self.colour_map = {
             0: (255, 255, 255),
             1: (255, 255, 0),
@@ -19,6 +16,11 @@ class PPMMaker:
             7: (0, 255, 255),
             8: (255, 0, 255)
         }
+
+        if image:
+            self.im = Image.open(image).rotate(self.rotation)
+            self.pixels = list(self.im.getdata())
+            self.width, self.height = self.im.size
 
     def preview(self):
         pixel_string = ''
@@ -61,3 +63,13 @@ class PPMMaker:
         for x in ppm_list:
             self.image_from_ppm(x, filename_prefix + '-' + str(z) + '.gif')
             z = z + 1
+
+    def image_from_ppm_file(self, inputfile, output_filename):
+        ppm = self.file_get_contents(inputfile)
+        ppm = ppm.replace('\n', '.')
+        return self.image_from_ppm(ppm, output_filename)
+
+    @staticmethod
+    def file_get_contents(filename):
+        with open(filename) as f:
+            return f.read()

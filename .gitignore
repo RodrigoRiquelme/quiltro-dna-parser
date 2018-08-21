@@ -1,3 +1,8 @@
 .env/
 .idea/
 *.pyc
+
+/generated/**
+!/generated/images/.gitkeep
+!/generated/ppm/.gitkeep
+
