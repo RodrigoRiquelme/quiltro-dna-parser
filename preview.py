@@ -12,8 +12,8 @@ def main(argv):
     input_file = argv[1]
     ppm_maker = PPMMaker(input_file)
     print(ppm_maker.preview())
+    print(ppm_maker.output_ppm())
 
 
 if __name__ == "__main__":
-    print "main"
     main(sys.argv)

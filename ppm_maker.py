@@ -56,6 +56,7 @@ class PPMMaker:
             for s in i:
                 img_data.append(int(s))
         z = 0
+        print height, width
         img = Image.new('RGB', (height, width))
         for x in range(img.width):
             for y in range(img.height):
@@ -70,8 +71,8 @@ class PPMMaker:
             self.image_from_ppm(x, filename_prefix + '-' + str(z) + '.gif')
             z = z + 1
 
-    def image_from_ppm_file(self, inputfile, output_filename):
-        ppm = self.file_get_contents(inputfile)
+    def image_from_ppm_file(self, input_file, output_filename):
+        ppm = self.file_get_contents(input_file)
         ppm = ppm.replace('\n', '.')
         return self.image_from_ppm(ppm, output_filename)
 
