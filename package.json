@@ -1,0 +1,27 @@
+{
+  "name": "quiltro-dna-parser",
+  "version": "1.0.0",
+  "description": "Official Quiltro DNA Parser from CryptoQuiltros",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoRiquelme/ppm-maker.git"
+  },
+  "keywords": [
+    "python",
+    "node.js",
+    "image",
+    "parser",
+    "ppm",
+    "gif"
+  ],
+  "author": "Rodrigo Riquelme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoRiquelme/ppm-maker/issues"
+  },
+  "homepage": "https://github.com/RodrigoRiquelme/ppm-maker#readme"
+}
