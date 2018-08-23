@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RodrigoRiquelme/ppm-maker.git"
+    "url": "git+https://github.com/RodrigoRiquelme/quiltro-dna-parser.git"
   },
   "keywords": [
     "python",
@@ -21,7 +21,7 @@
   "author": "Rodrigo Riquelme",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RodrigoRiquelme/ppm-maker/issues"
+    "url": "https://github.com/RodrigoRiquelme/quiltro-dna-parser/issues"
   },
-  "homepage": "https://github.com/RodrigoRiquelme/ppm-maker#readme"
+  "homepage": "https://github.com/RodrigoRiquelme/quiltro-dna-parser#readme"
 }

@@ -54,7 +54,7 @@
         <script src="index.js"></script>
         <script>
 
-            for (i = 1; i <= 24; i++) {
+            for (var i = 1; i <= 24; i++) {
                 generateQuiltroImage(generateRandomImageHex("text" + i), 2, "canvas" + i);
             }
 
@@ -68,20 +68,20 @@
                 return output_string;
             }
 
-            function generateQuiltroImage(catId, size, canvas){
+            function generateQuiltroImage(catId, size, canvasId){
                 size = size || 10;
                 var data = quiltroidparser(catId);
-                var canvas = document.getElementById(canvas);
+                var canvas = document.getElementById(canvasId);
                 canvas.width = size * data.length;
                 canvas.height = size * data[1].length;
                 var ctx = canvas.getContext("2d");
 
-                for(var i = 0; i < data.length; i++){
-                    for(var j = 0; j < data[i].length; j++){
+                for (var i = 0; i < data.length; i++) {
+                    for (var j = 0; j < data[i].length; j++){
                         var color = data[i][j];
-                        if(color){
-                        ctx.fillStyle = color;
-                        ctx.fillRect(i * size, j * size, size, size);
+                        if  (color) {
+                            ctx.fillStyle = color;
+                            ctx.fillRect(i * size, j * size, size, size);
                         }
                     }
                 }
