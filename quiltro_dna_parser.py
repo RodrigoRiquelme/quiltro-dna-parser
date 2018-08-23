@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-class PPMMaker:
+class QuiltroDnaParser:
 
     def __init__(self, image=None):
         self.rotation = 90
@@ -64,12 +64,6 @@ class PPMMaker:
                 img.putpixel((x, y), (r, g, b))
                 z = z + 1
         img.save(filename, save_all=True, append_images=[img])
-
-    def image_from_ppm_list(self, ppm_list, filename_prefix):
-        z = 0
-        for x in ppm_list:
-            self.image_from_ppm(x, filename_prefix + '-' + str(z) + '.gif')
-            z = z + 1
 
     def image_from_ppm_file(self, input_file, output_filename):
         ppm = self.file_get_contents(input_file)

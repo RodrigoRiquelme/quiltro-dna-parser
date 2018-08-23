@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from ppm_maker import PPMMaker
+from quiltro_dna_parser import QuiltroDnaParser
 import sys
 
 
@@ -10,9 +10,9 @@ def main(argv):
         return
 
     input_file = argv[1]
-    ppm_maker = PPMMaker(input_file)
-    print(ppm_maker.preview())
-    print(ppm_maker.output_ppm())
+    dna_parser = QuiltroDnaParser(input_file)
+    print(dna_parser.preview())
+    print(dna_parser.output_ppm())
 
 
 if __name__ == "__main__":
