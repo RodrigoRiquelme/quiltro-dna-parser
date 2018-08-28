@@ -19,7 +19,7 @@
     "gif"
   ],
   "author": "Rodrigo Riquelme",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/RodrigoRiquelme/quiltro-dna-parser/issues"
   },
