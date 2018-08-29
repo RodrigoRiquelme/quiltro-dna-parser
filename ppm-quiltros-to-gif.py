@@ -4,6 +4,7 @@ from quiltro_dna_parser import QuiltroDnaParser
 input_directory = "sources/ppm/"
 output_directory = "generated/images/"
 dna_parser = QuiltroDnaParser()
+
 for input_file in os.listdir(input_directory):
     if input_file.endswith(".txt"):
         output_filename = os.path.splitext(os.path.basename(input_file))[0] + ".gif"

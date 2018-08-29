@@ -6,15 +6,15 @@ class QuiltroDnaParser:
     def __init__(self, image=None):
         self.rotation = 90
         self.colour_map = {
-            0: (255, 255, 255),
-            1: (255, 255, 0),
-            2: (0, 0, 0),
-            3: (128, 255, 0),
-            4: (0, 64, 255),
-            5: (192, 0, 255),
-            6: (255, 128, 0),
-            7: (0, 255, 255),
-            8: (255, 0, 255)
+            0: (255, 255, 255),  # White
+            1: (255, 255, 0),  # Yellow
+            2: (0, 0, 0),  # Black
+            3: (128, 255, 0),  # Lime
+            4: (0, 64, 255),  # Crayon Blue
+            5: (192, 0, 255),  # Purple
+            6: (255, 128, 0),  # Electric Purple
+            7: (0, 255, 255),  # Orange
+            8: (255, 0, 255)  # Fuchsia
         }
 
         if image:
