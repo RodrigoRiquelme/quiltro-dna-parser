@@ -12,8 +12,8 @@ class QuiltroDnaParser:
             3: (128, 255, 0),  # Lime
             4: (0, 64, 255),  # Crayon Blue
             5: (192, 0, 255),  # Purple
-            6: (255, 128, 0),  # Electric Purple
-            7: (0, 255, 255),  # Orange
+            6: (255, 128, 0),  # Orange
+            7: (0, 255, 255),  # Aqua
             8: (255, 0, 255)  # Fuchsia
         }
 
