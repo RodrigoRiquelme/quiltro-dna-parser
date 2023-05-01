@@ -1,14 +1,13 @@
 # QuiltroDnaParser
 
-Este utilitario convierte una imagen gif en base a una [paleta de colores](palette.md) a formato un tipo PPM (texto plano) compatible con CryptoQuiltros.
+This utility converts a gif image based on a [colors pallette](palette.md) to a PPM format (plain text) compatible with CryptoQuiltros.
 
 
 
-*Nota: La imagen es rotada en 90 grados para mantener la orientación original en la imagen de salida final.
-
+*Note: The image is roteted on 90 degrees to keep original orientation on the output.
 ### preview()
 
-## Ejemplo
+## Example
 ```bash
 python preview.py sources/images/quiltro-1.gif
 ```
@@ -86,8 +85,7 @@ python preview.py sources/images/quiltro-1.gif
 ### image_from_ppm()
 ![quiltro](sources/images/quiltro-1.gif)
 
-Notese que el mapa de colores soportado está restringido a estos valores, las imágenes gif usadas fueran creadas con [Gimp](https://www.gimp.org/). 
-
+Note that the color map is restricted to the next values, the images was generated with [Gimp](https://www.gimp.org/). 
 
 ```python
 self.colour_map = {
@@ -103,7 +101,7 @@ self.colour_map = {
 }
 ```
 
-Es importante guardar la imagen en formato Gif en modo RGB para no tener problemas de compatibilidad con la [paleta de colores](palette.md).
+Is important to save the gif image on RGB mode to being compatible with [colors palette](palette.md).
 
 
 ## Client Side
